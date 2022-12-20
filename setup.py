@@ -8,27 +8,9 @@ http://click.pocoo.org/4/setuptools/
 """
 from setuptools import setup
 
-
-install_requires = [
-    'arrow',
-    'base58',
-    'click==6.6',
-    'docker-py==1.8.0',
-    'flake8',
-    'jsonrpcclient==2.0.1',
-    'jsonrpcserver==3.1.1',
-    'mnemonic==0.13',
-    'path.py',
-    'pexpect',
-    'protobuf==3.0.0a3',
-    'pyaes',
-    'pytest',
-    'pyyaml',
-    'requests<=2.11.1',
-    'sha256',
-    'tabulate',
-]
-
+f = open('./requirements.txt')
+install_requires = f.read().split('\n')
+f.close()
 version = __import__('two1').TWO1_VERSION
 
 setup(
@@ -70,7 +52,7 @@ setup(
               'two1.blockchain',
               'two1.bitrequests',
               'two1.commands.util',
-    ],
+              ],
 
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
