@@ -5,8 +5,8 @@ import pytest
 import unittest.mock
 
 import tests.mock as mock
-import two1.commands.buy as buy
-import two1.commands.util.uxstring as uxstring
+import crypto_two1.commands.buy as buy
+import crypto_two1.commands.util.uxstring as uxstring
 
 
 @pytest.mark.parametrize('method, balance_str, balance_int', [

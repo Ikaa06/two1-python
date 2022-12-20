@@ -4,10 +4,10 @@ import unittest.mock as mock
 
 import click
 
-from two1.commands import send
-from two1.commands.util import uxstring
-from two1.blockchain import exceptions as bc_exceptions
-from two1.wallet import exceptions as w_exceptions
+from crypto_two1.commands import send
+from crypto_two1.commands.util import uxstring
+from crypto_two1.blockchain import exceptions as bc_exceptions
+from crypto_two1.wallet import exceptions as w_exceptions
 
 
 @pytest.mark.unit

@@ -1,10 +1,10 @@
 """Test the 21 earn command."""
 import pytest
 
-from two1.cli import parse_config
-import two1.channels as channels
-from two1.commands.status import _get_balances
-from two1.commands.faucet import _faucet as faucet
+from crypto_two1.cli import parse_config
+import crypto_two1.channels as channels
+from crypto_two1.commands.status import _get_balances
+from crypto_two1.commands.faucet import _faucet as faucet
 
 
 class Stub:

@@ -1,10 +1,10 @@
 import time
 import pytest
 
-import two1.channels.statemachine as statemachine
-import two1.channels.paymentchannel as paymentchannel
-import two1.channels.walletwrapper as walletwrapper
-import two1.channels.database as database
+import crypto_two1.channels.statemachine as statemachine
+import crypto_two1.channels.paymentchannel as paymentchannel
+import crypto_two1.channels.walletwrapper as walletwrapper
+import crypto_two1.channels.database as database
 import tests.channels.mock as mock
 
 DEFAULT_EXPIRATION = 86400 * 8

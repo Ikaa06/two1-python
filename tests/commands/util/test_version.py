@@ -2,7 +2,7 @@
 import pytest
 
 # two1 imports
-import two1.commands.util.version as version
+import crypto_two1.commands.util.version as version
 
 
 @pytest.mark.parametrize("actual_version, expected_version, return_value", [

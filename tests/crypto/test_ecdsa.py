@@ -2,9 +2,9 @@ import hashlib
 import pytest
 import random
 
-from two1.crypto.ecdsa_base import Point
-from two1.crypto import ecdsa_openssl
-from two1.crypto import ecdsa_python
+from crypto_two1.crypto.ecdsa_base import Point
+from crypto_two1.crypto import ecdsa_openssl
+from crypto_two1.crypto import ecdsa_python
 
 
 def make_low_s(curve, p, rec_id):

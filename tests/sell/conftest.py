@@ -2,7 +2,7 @@
 import pytest
 
 # two1 imports
-from two1.sell.util.client_helpers import get_platform
+from crypto_two1.sell.util.client_helpers import get_platform
 
 
 @pytest.fixture()

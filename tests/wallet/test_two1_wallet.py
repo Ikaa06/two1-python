@@ -5,12 +5,12 @@ import random
 import string
 import tempfile
 
-from two1.bitcoin.crypto import HDKey, HDPrivateKey
-from two1.bitcoin.utils import bytes_to_str
-from two1.bitcoin.utils import rand_bytes
-from two1.blockchain.mock_provider import MockProvider
-from two1.wallet import exceptions
-from two1.wallet.two1_wallet import Two1Wallet
+from crypto_two1.bitcoin.crypto import HDKey, HDPrivateKey
+from crypto_two1.bitcoin.utils import bytes_to_str
+from crypto_two1.bitcoin.utils import rand_bytes
+from crypto_two1.blockchain.mock_provider import MockProvider
+from crypto_two1.wallet import exceptions
+from crypto_two1.wallet.two1_wallet import Two1Wallet
 
 enc_key_salt = b'\xaa\xbb\xcc\xdd'
 passphrase = "test_wallet"

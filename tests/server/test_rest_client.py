@@ -8,10 +8,10 @@ import pytest
 import requests
 
 # two1 imports
-import two1
-from two1.commands.util import exceptions
-from two1.server import rest_client
-from two1.server import machine_auth_wallet
+import crypto_two1
+from crypto_two1.commands.util import exceptions
+from crypto_two1.server import rest_client
+from crypto_two1.server import machine_auth_wallet
 from tests.mock import MockHttpResponse
 
 
@@ -92,7 +92,7 @@ def test_check_headers(mock_wallet, device_id, data):
 
     # Expected header format to be called as an input param into request
     expected_headers = {
-        'User-Agent': "21/{}".format(two1.TWO1_VERSION),
+        'User-Agent': "21/{}".format(crypto_two1.TWO1_VERSION),
         'From': "{}@{}".format(wallet_pk, device_id if device_id else "FREE_CLIENT")
         }
 

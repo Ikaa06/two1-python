@@ -8,18 +8,18 @@ import mnemonic
 import click
 
 # two1 imports
-import two1
-import two1.commands.util.logger
-from two1 import wallet as _wallet
-from two1.blockchain import twentyone_provider
-from two1 import server
-from two1 import bitrequests
+import crypto_two1
+import crypto_two1.commands.util.logger
+from crypto_two1 import wallet as _wallet
+from crypto_two1.blockchain import twentyone_provider
+from crypto_two1 import server
+from crypto_two1 import bitrequests
 from tests import mock as mock_objects
-from two1.commands import doctor as doc
+from crypto_two1.commands import doctor as doc
 # importing classes here to fix name conflicts
-from two1.commands.util.config import Config
-from two1.server.rest_client import TwentyOneRestClient
-from two1.server.machine_auth_wallet import MachineAuthWallet
+from crypto_two1.commands.util.config import Config
+from crypto_two1.server.rest_client import TwentyOneRestClient
+from crypto_two1.server.machine_auth_wallet import MachineAuthWallet
 
 
 # py.test hooks
@@ -50,7 +50,7 @@ def pytest_configure(config):
 
 def pytest_report_header(config):
     """ Adds the two1 version to the report header """
-    return "two1: {}".format(two1.TWO1_VERSION)
+    return "two1: {}".format(crypto_two1.TWO1_VERSION)
 
 
 def pytest_runtest_setup(item):
@@ -114,7 +114,7 @@ def wallet(config):
             temp directory.
     """
     # use standard provider
-    data_provider = twentyone_provider.TwentyOneProvider(two1.TWO1_PROVIDER_HOST)
+    data_provider = twentyone_provider.TwentyOneProvider(crypto_two1.TWO1_PROVIDER_HOST)
 
     # use mnemonic to create a wallet
     wallet_mnemonic = os.environ['WALLET_MNEMONIC'] if 'WALLET_MNEMONIC' in os.environ else None
@@ -161,7 +161,7 @@ def rest_client(machine_auth_wallet, username):
     Returns:
        TwentyOneRestClient: an initialized rest client object
     """
-    return TwentyOneRestClient(two1.TWO1_HOST, machine_auth_wallet, username)
+    return TwentyOneRestClient(crypto_two1.TWO1_HOST, machine_auth_wallet, username)
 
 
 @pytest.fixture()
@@ -180,7 +180,7 @@ def logged_in_rest_client(machine_auth_wallet, username, password):
     assert username, "Error: USER_NAME was not given as an environment variable"
 
     # rest client with the given username
-    _rest_client = TwentyOneRestClient(two1.TWO1_HOST, machine_auth_wallet, username)
+    _rest_client = TwentyOneRestClient(crypto_two1.TWO1_HOST, machine_auth_wallet, username)
 
     # logs into account
     _rest_client.login(machine_auth_wallet.wallet.current_address, password)
@@ -299,6 +299,6 @@ def patch_rest_client(monkeypatch, mock_config, mock_wallet):
 
 @pytest.yield_fixture()
 def two1_version_reset():
-    original_two1_version = two1.TWO1_VERSION
+    original_two1_version = crypto_two1.TWO1_VERSION
     yield original_two1_version
-    two1.TWO1_VERSION = original_two1_version
+    crypto_two1.TWO1_VERSION = original_two1_version

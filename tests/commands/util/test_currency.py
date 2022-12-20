@@ -1,6 +1,6 @@
 """Unit tests for currency utilities."""
-from two1.commands.util import currency
-from two1.commands.util.currency import Price
+from crypto_two1.commands.util import currency
+from crypto_two1.commands.util.currency import Price
 
 BTC_TO_USD = 450
 

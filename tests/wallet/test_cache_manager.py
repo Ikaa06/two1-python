@@ -2,10 +2,10 @@ import inspect
 import os.path
 import time
 
-from two1.blockchain.twentyone_provider import TwentyOneProvider
-from two1.bitcoin.hash import Hash
-from two1.wallet.cache_manager import CacheManager
-from two1.wallet.wallet_txn import WalletTransaction
+from crypto_two1.blockchain.twentyone_provider import TwentyOneProvider
+from crypto_two1.bitcoin.hash import Hash
+from crypto_two1.wallet.cache_manager import CacheManager
+from crypto_two1.wallet.wallet_txn import WalletTransaction
 
 
 this_file_path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))

@@ -1,9 +1,9 @@
 import codecs
 import pytest
 
-import two1.bitcoin as bitcoin
-import two1.channels.statemachine as statemachine
-import two1.channels.walletwrapper as walletwrapper
+import crypto_two1.bitcoin as bitcoin
+import crypto_two1.channels.statemachine as statemachine
+import crypto_two1.channels.walletwrapper as walletwrapper
 import tests.channels.mock as mock
 
 

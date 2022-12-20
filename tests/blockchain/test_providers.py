@@ -1,8 +1,8 @@
 import pytest
-from two1.bitcoin.crypto import HDPublicKey
-from two1.bitcoin.txn import Transaction
-from two1.blockchain.twentyone_provider import TwentyOneProvider
-from two1.blockchain.exceptions import DataProviderError
+from crypto_two1.bitcoin.crypto import HDPublicKey
+from crypto_two1.bitcoin.txn import Transaction
+from crypto_two1.blockchain.twentyone_provider import TwentyOneProvider
+from crypto_two1.blockchain.exceptions import DataProviderError
 
 
 acct_pub_key = HDPublicKey.from_b58check(

@@ -1,5 +1,5 @@
 """Flush command unit tests. """
-from two1.commands import flush
+from crypto_two1.commands import flush
 
 
 def test_flush(mock_rest_client, mock_wallet, mock_machine_auth, patch_click):

@@ -1,9 +1,9 @@
 import pytest
 
-from two1.bitcoin.exceptions import ScriptParsingError
-from two1.bitcoin.script import Script
-from two1.bitcoin.txn import Transaction
-from two1.bitcoin.utils import bytes_to_str, pack_var_str
+from crypto_two1.bitcoin.exceptions import ScriptParsingError
+from crypto_two1.bitcoin.script import Script
+from crypto_two1.bitcoin.txn import Transaction
+from crypto_two1.bitcoin.utils import bytes_to_str, pack_var_str
 
 
 def test_serialization():

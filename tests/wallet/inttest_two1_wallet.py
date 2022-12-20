@@ -1,8 +1,8 @@
 import time
 
 import random
-from two1.blockchain.twentyone_provider import TwentyOneProvider
-from two1.wallet.two1_wallet import Two1Wallet
+from crypto_two1.blockchain.twentyone_provider import TwentyOneProvider
+from crypto_two1.wallet.two1_wallet import Two1Wallet
 
 mnemonics = ['absent paddle capable spell bag reflect rally there swear swallow cook rubber',
              'stairs art mirror spoon clap talk exclude tuna absurd exact grape relief',

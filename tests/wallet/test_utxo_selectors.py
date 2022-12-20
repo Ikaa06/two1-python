@@ -1,9 +1,9 @@
 import random
 
-from two1.bitcoin.txn import UnspentTransactionOutput
-from two1.bitcoin.hash import Hash
-from two1.bitcoin.script import Script
-from two1.wallet.utxo_selectors import utxo_selector_smallest_first
+from crypto_two1.bitcoin.txn import UnspentTransactionOutput
+from crypto_two1.bitcoin.hash import Hash
+from crypto_two1.bitcoin.script import Script
+from crypto_two1.wallet.utxo_selectors import utxo_selector_smallest_first
 
 
 def test_smallest_first():

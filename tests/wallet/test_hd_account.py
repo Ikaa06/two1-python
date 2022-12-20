@@ -1,10 +1,10 @@
 import pytest
 
-from two1.bitcoin.crypto import HDKey, HDPrivateKey
-from two1.blockchain.mock_provider import MockProvider
-from two1.wallet.account_types import account_types
-from two1.wallet.cache_manager import CacheManager
-from two1.wallet.hd_account import HDAccount
+from crypto_two1.bitcoin.crypto import HDKey, HDPrivateKey
+from crypto_two1.blockchain.mock_provider import MockProvider
+from crypto_two1.wallet.account_types import account_types
+from crypto_two1.wallet.cache_manager import CacheManager
+from crypto_two1.wallet.hd_account import HDAccount
 
 
 master_key_mnemonic = 'cage minimum apology region aspect wrist demise gravity another bulb tail invest'

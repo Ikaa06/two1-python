@@ -10,8 +10,8 @@ import click
 import pytest
 
 # two1 imports
-import two1.commands.util.logger as _logger
-from two1.commands.util.logger import LESS_ENV
+import crypto_two1.commands.util.logger as _logger
+from crypto_two1.commands.util.logger import LESS_ENV
 
 
 # Creates a ClickLogger

@@ -1,5 +1,5 @@
 import pytest
-from two1.bitcoin import crypto, hash, script, txn, utils
+from crypto_two1.bitcoin import crypto, hash, script, txn, utils
 
 # The first key in this list had 10000 satoshis sent to it in block 369023
 keys = [(crypto.PrivateKey.from_b58check('5JcjcDkFZ3Dz4RjnK3n9cyLVmNS3FzGdNRtNMGFBfJKgzM8eAhH'),

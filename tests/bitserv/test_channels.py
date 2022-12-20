@@ -5,16 +5,16 @@ import pytest
 import collections
 import multiprocessing
 
-import two1.bitcoin.utils as utils
-from two1.bitcoin import Script, Hash
-from two1.bitcoin import PrivateKey
-from two1.bitcoin import Transaction, TransactionInput, TransactionOutput
-from two1.channels.statemachine import PaymentChannelRedeemScript
-from two1.bitserv.payment_server import PaymentServer, PaymentServerError
-from two1.bitserv.payment_server import PaymentChannelNotFoundError
-from two1.bitserv.payment_server import TransactionVerificationError
-from two1.bitserv.payment_server import BadTransactionError
-from two1.bitserv.models import DatabaseSQLite3, ChannelSQLite3
+import crypto_two1.bitcoin.utils as utils
+from crypto_two1.bitcoin import Script, Hash
+from crypto_two1.bitcoin import PrivateKey
+from crypto_two1.bitcoin import Transaction, TransactionInput, TransactionOutput
+from crypto_two1.channels.statemachine import PaymentChannelRedeemScript
+from crypto_two1.bitserv.payment_server import PaymentServer, PaymentServerError
+from crypto_two1.bitserv.payment_server import PaymentChannelNotFoundError
+from crypto_two1.bitserv.payment_server import TransactionVerificationError
+from crypto_two1.bitserv.payment_server import BadTransactionError
+from crypto_two1.bitserv.models import DatabaseSQLite3, ChannelSQLite3
 
 
 class MockTwo1Wallet:

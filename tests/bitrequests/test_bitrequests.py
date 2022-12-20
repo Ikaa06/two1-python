@@ -5,11 +5,11 @@ import unittest.mock as mock
 import pytest
 import requests
 
-from two1.commands.util import config
-from two1.bitrequests import BitTransferRequests
-from two1.bitrequests import OnChainRequests
-from two1.bitrequests import BitRequestsError
-from two1.bitrequests import BitRequests
+from crypto_two1.commands.util import config
+from crypto_two1.bitrequests import BitTransferRequests
+from crypto_two1.bitrequests import OnChainRequests
+from crypto_two1.bitrequests import BitRequestsError
+from crypto_two1.bitrequests import BitRequests
 
 
 class MockWalletTxn:

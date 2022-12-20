@@ -3,11 +3,11 @@ import click
 import pytest
 
 # two1 imports
-import two1.commands.login as login
-import two1.commands.log as log
-import two1.commands.status as status
-import two1.commands.mine as mine
-import two1.commands.util.uxstring as uxstring
+import crypto_two1.commands.login as login
+import crypto_two1.commands.log as log
+import crypto_two1.commands.status as status
+import crypto_two1.commands.mine as mine
+import crypto_two1.commands.util.uxstring as uxstring
 # import two1.commands.util.bitcoin_computer as bitcoin_computer
 
 

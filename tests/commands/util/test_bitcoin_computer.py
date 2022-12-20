@@ -8,7 +8,7 @@ import socket
 import pytest
 
 # two1 imorts
-from two1.commands.util import bitcoin_computer
+from crypto_two1.commands.util import bitcoin_computer
 
 # String to use as the content of the mocked file
 UUID_STR = "12345678-1234-1234-1234-123456789012"
@@ -148,7 +148,7 @@ def test_get_hashrate_inputs(mock_recv, mock_connect, hashrate_sample, outcome):
 
 def test_get_hashrate_file_not_found():
     """ Ensures FileNotFoundError is raised if minerd unix sock cannot be found """
-    import two1.commands.util.bitcoin_computer as bitcoin_computer
+    import crypto_two1.commands.util.bitcoin_computer as bitcoin_computer
     bitcoin_computer.MINERD_SOCK = '/foo/bar'
 
     with pytest.raises(FileNotFoundError):

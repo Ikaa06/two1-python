@@ -9,8 +9,8 @@ import pytest
 
 # two1 imports
 # importing the class directly to get around renaming doctor
-from two1.commands.doctor import Check
-from two1.commands.doctor import Doctor
+from crypto_two1.commands.doctor import Check
+from crypto_two1.commands.doctor import Doctor
 
 
 @pytest.mark.parametrize("url, return_value, server_port", [

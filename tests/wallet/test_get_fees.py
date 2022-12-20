@@ -1,8 +1,8 @@
 from unittest import TestCase
 from unittest import mock
 
-from two1.wallet import exceptions
-from two1.wallet import fees
+from crypto_two1.wallet import exceptions
+from crypto_two1.wallet import fees
 
 
 def test_get_fees_cointape_server_down():

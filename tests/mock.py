@@ -4,8 +4,8 @@ import codecs
 import collections
 import unittest.mock
 
-import two1.bitcoin as bitcoin
-import two1.channels as channels
+import crypto_two1.bitcoin as bitcoin
+import crypto_two1.channels as channels
 
 
 class MockTwo1Wallet:

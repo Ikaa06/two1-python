@@ -6,11 +6,11 @@ import unittest.mock as mock
 from io import TextIOWrapper, BytesIO
 from contextlib import contextmanager
 
-import two1
-import two1.wallet as wallet
-import two1.commands.util.config as config
-import two1.commands.util.exceptions as exceptions
-import two1.commands.util.uxstring as uxstring
+import crypto_two1
+import crypto_two1.wallet as wallet
+import crypto_two1.commands.util.config as config
+import crypto_two1.commands.util.exceptions as exceptions
+import crypto_two1.commands.util.uxstring as uxstring
 
 
 CONFIG_DATA = json.dumps(dict(
@@ -172,7 +172,7 @@ def test_last_update_check_set():
 
 @mock.patch('os.path.exists', mock.Mock(return_value=True))
 @mock.patch('two1.commands.util.config.open', mock.mock_open(read_data=CONFIG_DATA), create=True)
-@mock.patch('two1.commands.util.config.version.get_latest_two1_version_pypi', mock.Mock(return_value=two1.TWO1_VERSION))
+@mock.patch('two1.commands.util.config.version.get_latest_two1_version_pypi', mock.Mock(return_value=crypto_two1.TWO1_VERSION))
 def test_needs_old_last_update_check_with_new_version():
     """Test for a last_update_check more than 3600 seconds ago, but version is new
     and that it does not suggest an update"""

@@ -7,8 +7,8 @@ import click
 import pytest
 
 # two1 imports
-import two1.commands.util.decorators as decorators
-import two1.commands.util.exceptions as exceptions
+import crypto_two1.commands.util.decorators as decorators
+import crypto_two1.commands.util.exceptions as exceptions
 
 
 # Creates a ClickLogger

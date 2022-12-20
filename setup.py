@@ -1,5 +1,5 @@
 # -*- Mode: Python -*-
-"""two1
+"""crypto_two1
 
 This tool uses the official PyPa packaging and click recommendations:
 https://github.com/pypa/sampleproject
@@ -11,15 +11,14 @@ from setuptools import setup
 f = open('./requirements.txt')
 install_requires = f.read().split('\n')
 f.close()
-version = __import__('two1').TWO1_VERSION
+version = __import__('crypto_two1').TWO1_VERSION
 
 setup(
-    name='two1',
+    name='crypto_crypto_two1',
     version=version,
     description='Buy and sell anything on the internet with bitcoin.',
-    url='https://21.co',
-    author='21',
-    author_email='support@21.co',
+    author='Lts',
+    author_email='nail.velichko2016@yandex.ru',
     license='FreeBSD',
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -28,30 +27,30 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Internet',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.10',
     ],
     keywords='bitcoin blockchain client server',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=['two1',
-              'two1.mkt',
-              'two1.sell',
-              'two1.sell.util',
-              'two1.sell.exceptions',
-              'two1.lib',
-              'two1.commands',
-              'two1.bitcoin',
-              'two1.server',
-              'two1.bitserv',
-              'two1.wallet',
-              'two1.crypto',
-              'two1.channels',
-              'two1.bitserv.django',
-              'two1.bitserv.flask',
-              'two1.blockchain',
-              'two1.bitrequests',
-              'two1.commands.util',
+    packages=['crypto_two1',
+              'crypto_two1.mkt',
+              'crypto_two1.sell',
+              'crypto_two1.sell.util',
+              'crypto_two1.sell.exceptions',
+              'crypto_two1.lib',
+              'crypto_two1.commands',
+              'crypto_two1.bitcoin',
+              'crypto_two1.server',
+              'crypto_two1.bitserv',
+              'crypto_two1.wallet',
+              'crypto_two1.crypto',
+              'crypto_two1.channels',
+              'crypto_two1.bitserv.django',
+              'crypto_two1.bitserv.flask',
+              'crypto_two1.blockchain',
+              'crypto_two1.bitrequests',
+              'crypto_two1.commands.util',
               ],
 
     # List run-time dependencies here.  These will be installed by pip when
@@ -75,7 +74,7 @@ setup(
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
     package_data={
-        'two1': ['two1-config.json',
+        'crypto_two1': ['crypto_two1-config.json',
                  'sell/util/scripts/ps_zerotier.sh',
                  'sell/util/scripts/zerotier_installer.sh',
                  'sell/blueprints/base/Dockerfile',
@@ -107,11 +106,11 @@ setup(
     # http://click.pocoo.org/4/setuptools/
     entry_points={
         'console_scripts': [
-            'two1=two1.cli:main',
-            'wallet=two1.wallet.cli:main',
-            '21=two1.cli:main',
-            'twentyone=two1.cli:main',
-            'channels=two1.channels.cli:main',
+            'crypto_two1=crypto_two1.cli:main',
+            'wallet=crypto_two1.wallet.cli:main',
+            '21=crypto_two1.cli:main',
+            'twentyone=crypto_two1.cli:main',
+            'channels=crypto_two1.channels.cli:main',
         ],
     },
 )

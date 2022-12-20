@@ -3,7 +3,7 @@ import importlib
 
 import pytest
 
-import two1.cli
+import crypto_two1.cli
 
 
 @pytest.mark.unit
@@ -22,7 +22,7 @@ def test_help_text_format():
         send        Send a specified address some satoshis.
 
     """
-    command_names = sorted(two1.cli.main.commands.keys())
+    command_names = sorted(crypto_two1.cli.main.commands.keys())
     for command_name in command_names:
         module = importlib.import_module('two1.commands.' + command_name)
         command = getattr(module, command_name)

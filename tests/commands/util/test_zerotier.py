@@ -11,7 +11,7 @@ import json
 import pytest
 
 # two1 imports
-import two1.commands.util.zerotier as zerotier
+import crypto_two1.commands.util.zerotier as zerotier
 
 
 @pytest.mark.parametrize("mock_return_value, outcome", [

@@ -3,8 +3,8 @@ import pytest
 import click
 
 from tests import mock as mock_objects
-from two1.commands import status
-from two1.commands.util import uxstring
+from crypto_two1.commands import status
+from crypto_two1.commands.util import uxstring
 
 
 @pytest.mark.unit
